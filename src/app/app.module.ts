@@ -18,9 +18,10 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './page/home/home.component';
+import { ProductsHeaderComponent } from './pages/components/products-header/products-header.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent],
+  declarations: [AppComponent, HeaderComponent, HomeComponent, ProductsHeaderComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

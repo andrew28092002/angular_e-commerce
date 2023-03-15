@@ -21,7 +21,7 @@ import { HomeComponent } from './page/home/home.component';
 import { ProductsHeaderComponent } from './components/products-header/products-header.component';
 import { FiltersComponent } from './components/filters/filters.component';
 import { ProductBoxComponent } from './components/product-box/product-box.component';
-import { CartComponent } from './components/cart/cart.component';
+import { CartComponent } from './page/cart/cart.component';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, HomeComponent, ProductsHeaderComponent, FiltersComponent, ProductBoxComponent, CartComponent],

@@ -32,10 +32,17 @@ export class CartComponent implements OnInit {
   constructor(private CartService: CartService) {}
 
   ngOnInit(): void {
-    this.dataSource = this.cart.items;
+    this.CartService.cart.subscribe((_cart) => {
+      this.cart = _cart;
+      this.dataSource = this.cart.items;
+    });
   }
 
   getTotal(items: CartItem[]): number {
     return this.CartService.getTotal(items);
+  }
+
+  onClearCart():void{
+    this.CartService.clearCart()
   }
 }

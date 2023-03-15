@@ -45,4 +45,16 @@ export class CartComponent implements OnInit {
   onClearCart():void{
     this.CartService.clearCart()
   }
+
+  onRemoveFromCart(item: CartItem): void{
+    this.CartService.removeFromCart(item)
+  }
+
+  onRemoveQuantity(item: CartItem){
+    this.CartService.removeQuantity(item)
+  }
+
+  onAddQuantity(item: CartItem){
+    this.CartService.addToCart(item)
+  }
 }

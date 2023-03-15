@@ -31,4 +31,8 @@ export class HeaderComponent implements OnInit {
   getTotal(items: CartItem[]): number {
     return this.CartService.getTotal(items)
   }
+
+  onClearCart(){
+    this.CartService.clearCart()
+  }
 }
